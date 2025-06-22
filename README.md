@@ -17,3 +17,28 @@ By completing this project, we aim to:
 * **Frontend:** HTML, CSS, JavaScript (React or similar framework)
 * **Version Control:** Git and GitHub
 * **Design Tools:** Figma for UI/UX design
+---
+
+## UI/UX Design Planning
+
+### Design Goals
+* Create an intuitive booking flow.
+* Maintain visual consistency across the application.
+* Ensure fast loading times.
+* Prioritize mobile responsiveness.
+
+### Key Features
+* Property search and filtering.
+* Detailed property viewing.
+* A secure checkout process.
+* User authentication.
+
+### Primary Pages
+| Page                      | Description                                                                                                                           |
+| :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------ |
+| **Property Listing View** | A grid-based display of available properties with powerful filters to help users find the perfect place.                                |
+| **Listing Detailed View** | A complete view of a single property, including a photo gallery, detailed descriptions, amenities, and a prominent booking form.        |
+| **Simple Checkout View** | A streamlined and secure form for users to enter their payment details and confirm their booking with confidence.                       |
+
+### Importance of User-Friendly Design
+A well-designed booking system is critical for success. It reduces friction in the user journey, which increases conversion rates and improves overall customer satisfaction. Clear navigation, intuitive interfaces, and a responsive design are essential for building trust and encouraging repeat business.
