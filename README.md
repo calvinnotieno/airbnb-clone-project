@@ -221,4 +221,23 @@ Securing the backend API is a top priority to protect user data, maintain applic
 
 * **Protecting User Data:** Strong authentication and authorization are essential to protect personally identifiable information (PII) such as names, emails, and user history from unauthorized access.
 * **Securing Payments:** While a third-party service will handle direct payment processing, our API must securely manage payment identifiers and booking confirmations. Securing these transactions is critical to prevent financial fraud and maintain user trust.
-* **Maintaining Platform Integrity:** Security measures prevent unauthorized users from creating fake listings, writing malicious reviews, or altering booking information, which preserves the reliability and trustworthiness of the entire platform.
+* **Maintaining Platform Integrity:** Security measures prevent unauthorized users from creating fake listings, writing malicious reviews, or altering booking information, which preserves the reliability and trustworthiness of the entire platform.---
+
+## CI/CD Pipeline
+
+To ensure a streamlined and reliable development process, we will implement a Continuous Integration/Continuous Deployment (CI/CD) pipeline. This automates the building, testing, and deployment of our application, allowing for faster delivery of new features and bug fixes.
+
+### What is CI/CD?
+
+* **Continuous Integration (CI):** This is the practice of developers merging their code changes into a central repository frequently. After each merge, an automated build and test sequence is run. The primary goal of CI is to detect integration issues as early as possible.
+* **Continuous Deployment (CD):** This is the practice of automatically deploying all code changes that pass the CI stage to a testing or production environment. This makes the release process faster and more reliable.
+
+### Importance for This Project
+
+Implementing a CI/CD pipeline is crucial for this project because it will enforce code quality through automated testing, reduce the risk of human error during deployment, and allow our team to focus on building features rather than on manual deployment tasks. It ensures that both the frontend and backend are always in a deployable state after passing all checks.
+
+### Potential Tools
+
+* **GitHub Actions:** As our code is hosted on GitHub, GitHub Actions is the natural choice for our CI/CD orchestrator. We can create workflows that trigger automatically on events like a `push` to the main branch or the creation of a pull request.
+* **Docker:** We will use Docker to containerize our application (both the Django backend and the React frontend). This packages the application and its dependencies into a standardized unit, ensuring that it runs consistently across any environment, from a developer's laptop to the production server.
+* **Testing Frameworks:** The pipeline will automatically run our test suites, such as `pytest` for the Django backend and `Jest` or `React Testing Library` for the frontend.
