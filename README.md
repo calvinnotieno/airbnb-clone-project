@@ -123,4 +123,17 @@ We will develop a set of reusable, modular, and consistent UI components to buil
     * Social media links
     * Copyright information
 
-Each component will be designed for reusability and consistency across the application.
+Each component will be designed for reusability and consistency across the application.---
+
+## Technology Stack
+
+This section outlines the core backend technologies chosen for this project and the purpose each one serves.
+
+* **Django:**
+    * **Purpose:** Django is a high-level Python web framework that will be used to build the robust and secure backend for our application. Its primary role is to create the RESTful APIs that the frontend will interact with to fetch and manipulate data, such as user profiles, property listings, and bookings.
+
+* **PostgreSQL:**
+    * **Purpose:** PostgreSQL will serve as our primary relational database. It is a powerful, open-source object-relational database system known for its reliability and data integrity. All project data, including user credentials, property details, booking information, and reviews, will be stored and managed within PostgreSQL.
+
+* **GraphQL:**
+    * **Purpose:** GraphQL will be used as the query language for our API. Unlike traditional REST APIs, GraphQL allows the frontend application to request exactly the data it needs in a single API call, and nothing more. This leads to highly efficient data transfer, which is crucial for a fast and responsive user experience, especially on mobile devices.
