@@ -41,4 +41,28 @@ By completing this project, we aim to:
 | **Simple Checkout View** | A streamlined and secure form for users to enter their payment details and confirm their booking with confidence.                       |
 
 ### Importance of User-Friendly Design
-A well-designed booking system is critical for success. It reduces friction in the user journey, which increases conversion rates and improves overall customer satisfaction. Clear navigation, intuitive interfaces, and a responsive design are essential for building trust and encouraging repeat business.
+A well-designed booking system is critical for success. It reduces friction in the user journey, which increases conversion rates and improves overall customer satisfaction. Clear navigation, intuitive interfaces, and a responsive design are essential for building trust and encouraging repeat business.### Design Specifications (from Figma)
+
+#### Color Styles
+* **Primary:** `#FF5A5F`
+* **Secondary:** `#008489`
+* **Background:** `#FFFFFF`
+* **Text:** `#222222`
+* **Secondary Text:** `#717171`
+
+#### Typography
+* **Primary Font:**
+    * Font Family: Circular
+    * Font Weight: Medium (500)
+    * Font Size: 16px
+* **Headings:**
+    * Font Family: Circular
+    * Font Weight: Bold (700)
+    * Font Size: 24px-32px
+* **Secondary Text:**
+    * Font Family: Circular
+    * Font Weight: Book (400)
+    * Font Size: 14px
+
+### Importance of Identifying Design Properties
+Identifying and documenting the specific properties of a mock-up design (like colors, fonts, and spacing) is a critical step before development. It establishes a single source of truth for the application's visual identity, ensuring consistency across all components and pages. This practice streamlines the development process, reduces ambiguity for developers, and makes it easier to maintain and scale the application's frontend in the future.
