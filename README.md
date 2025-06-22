@@ -76,7 +76,28 @@ A well-designed booking system is critical for success. It reduces friction in t
 * **Scrum Master:** Facilitates all agile processes and ceremonies, removes any blockers hindering the team's progress, and organizes team meetings to ensure smooth collaboration.
 
 ### Importance of Identifying Design Properties
-Identifying and documenting the specific properties of a mock-up design (like colors, fonts, and spacing) is a critical step before development. It establishes a single source of truth for the application's visual identity, ensuring consistency across all components and pages. This practice streamlines the development process, reduces ambiguity for developers, and makes it easier to maintain and scale the application's frontend in the future.---
+Identifying and documenting the specific properties of a mock-up design (like colors, fonts, and spacing) is a critical step before development. It establishes a single source of truth for the application's visual identity, ensuring consistency across all components and pages. This practice streamlines the development process, reduces ambiguity for developers, and makes it easier to maintain and scale the application's frontend in the future.------
+
+## Team Roles
+
+Based on the project overview and best practices, here are the key backend roles for this project:
+
+* **Backend Developer:**
+    * **Responsibility:** The Backend Developer is responsible for building and maintaining the server, databases, and APIs that power the entire application. They create the "behind-the-scenes" logic that handles user requests, manages data, and ensures the application is functional and performant.
+    * **In this project, their duties will include:**
+        * Developing the server-side application logic.
+        * Building secure and efficient APIs for the frontend to consume.
+        * Integrating with third-party services like payment gateways.
+        * Ensuring the system can scale to handle many users and bookings.
+
+* **Database Administrator (DBA):**
+    * **Responsibility:** The Database Administrator is the custodian of the project's data. They are in charge of designing, implementing, securing, and maintaining the database to ensure data integrity, security, and availability.
+    * **In this project, their duties will include:**
+        * Designing the logical and physical database schema.
+        * Implementing and configuring the database system (e.g., MySQL, PostgreSQL).
+        * Establishing and testing backup and recovery plans to prevent data loss.
+        * Monitoring database performance and tuning queries for speed.
+        * Managing user access and permissions to protect sensitive data.
 
 ## UI Component Patterns
 
