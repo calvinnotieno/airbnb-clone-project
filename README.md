@@ -136,4 +136,42 @@ This section outlines the core backend technologies chosen for this project and 
     * **Purpose:** PostgreSQL will serve as our primary relational database. It is a powerful, open-source object-relational database system known for its reliability and data integrity. All project data, including user credentials, property details, booking information, and reviews, will be stored and managed within PostgreSQL.
 
 * **GraphQL:**
-    * **Purpose:** GraphQL will be used as the query language for our API. Unlike traditional REST APIs, GraphQL allows the frontend application to request exactly the data it needs in a single API call, and nothing more. This leads to highly efficient data transfer, which is crucial for a fast and responsive user experience, especially on mobile devices.
+    * **Purpose:** GraphQL will be used as the query language for our API. Unlike traditional REST APIs, GraphQL allows the frontend application to request exactly the data it needs in a single API call, and nothing more. This leads to highly efficient data transfer, which is crucial for a fast and responsive user experience, especially on mobile devices.---
+
+## Database Design
+
+This section provides an overview of the database structure, outlining the key entities (models), their essential fields, and their relationships.
+
+### Key Entities
+
+* **Users**
+    * **Fields:** `id` (Primary Key), `username`, `email`, `password_hash`, `profile_picture_url`, `created_at`
+    * **Description:** Stores information about registered users.
+
+* **Properties**
+    * **Fields:** `id` (Primary Key), `owner_id` (Foreign Key to Users), `title`, `description`, `address`, `price_per_night`, `created_at`
+    * **Description:** Represents the accommodation listings available for booking.
+
+* **Bookings**
+    * **Fields:** `id` (Primary Key), `user_id` (Foreign Key to Users), `property_id` (Foreign Key to Properties), `start_date`, `end_date`, `total_price`
+    * **Description:** Stores information about a confirmed booking made by a user for a specific property.
+
+* **Reviews**
+    * **Fields:** `id` (Primary Key), `user_id` (Foreign Key to Users), `property_id` (Foreign Key to Properties), `rating` (1-5), `comment`
+    * **Description:** Contains reviews left by users for properties they have stayed at.
+
+* **Payments**
+    * **Fields:** `id` (Primary Key), `booking_id` (Foreign Key to Bookings), `amount`, `payment_status` (e.g., 'completed', 'failed'), `transaction_id`, `created_at`
+    * **Description:** Holds records of financial transactions related to bookings.
+
+### Entity Relationships
+
+* A **User** can have many **Properties** (one-to-many).
+* A **User** can have many **Bookings** (one-to-many).
+* A **User** can write many **Reviews** (one-to-many).
+* A **Property** belongs to one **User** (the owner).
+* A **Property** can have many **Bookings** (one-to-many).
+* A **Property** can have many **Reviews** (one-to-many).
+* A **Booking** belongs to one **User** and one **Property**.
+* A **Review** belongs to one **User** and one **Property**.
+* A **Payment** is associated with one **Booking** (one-to-one).
