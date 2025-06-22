@@ -76,4 +76,30 @@ A well-designed booking system is critical for success. It reduces friction in t
 * **Scrum Master:** Facilitates all agile processes and ceremonies, removes any blockers hindering the team's progress, and organizes team meetings to ensure smooth collaboration.
 
 ### Importance of Identifying Design Properties
-Identifying and documenting the specific properties of a mock-up design (like colors, fonts, and spacing) is a critical step before development. It establishes a single source of truth for the application's visual identity, ensuring consistency across all components and pages. This practice streamlines the development process, reduces ambiguity for developers, and makes it easier to maintain and scale the application's frontend in the future.
+Identifying and documenting the specific properties of a mock-up design (like colors, fonts, and spacing) is a critical step before development. It establishes a single source of truth for the application's visual identity, ensuring consistency across all components and pages. This practice streamlines the development process, reduces ambiguity for developers, and makes it easier to maintain and scale the application's frontend in the future.---
+
+## UI Component Patterns
+
+We will develop a set of reusable, modular, and consistent UI components to build the application's interface efficiently.
+
+### Planned Components
+
+* **Navbar**
+    * Logo
+    * Search bar
+    * User navigation links (e.g., Sign Up, Login, Profile)
+    * Responsive menu for mobile views
+
+* **Property Card**
+    * Property image or carousel
+    * Basic details (e.g., location, price per night, rating)
+    * Favorite/Wishlist button
+    * Responsive layout that adapts to different screen sizes
+
+* **Footer**
+    * Site map links (e.g., About, Careers, Help)
+    * Company and legal information
+    * Social media links
+    * Copyright information
+
+Each component will be designed for reusability and consistency across the application.
