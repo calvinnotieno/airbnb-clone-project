@@ -193,4 +193,32 @@ This section details the core features that will be implemented in the backend o
     * The booking system is the core transactional feature of the application. It will manage the entire booking process, from a user selecting dates and requesting to book, to the owner confirming the reservation and the system blocking out the dates. This ensures a smooth and reliable process for both guests and hosts.
 
 * **Reviews and Ratings**
-    * This feature enables users to leave reviews and ratings for properties after their stay. This builds trust and community on the platform, as future guests can use this feedback to make informed decisions. It also allows hosts to build a reputation for their properties.
+    * This feature enables users to leave reviews and ratings for properties after their stay. This builds trust and community on the platform, as future guests can use this feedback to make informed decisions. It also allows hosts to build a reputation for their properties.---
+
+## API Security
+
+Securing the backend API is a top priority to protect user data, maintain application integrity, and build trust. The following measures will be implemented to ensure the application is robust against common threats.
+
+### Key Security Measures
+
+* **Authentication (Token-Based)**
+    * **Implementation:** We will use JSON Web Tokens (JWT) for authentication. When a user logs in, the server will issue a signed token that the frontend must include in the header of all subsequent requests to protected endpoints.
+    * **Purpose:** This ensures that every request to a sensitive part of the application is made by a verified, logged-in user.
+
+* **Authorization (Permission Levels)**
+    * **Implementation:** We will implement role-based access control. For example, a user must be authenticated as the property owner to be able to edit or delete that property's details.
+    * **Purpose:** This prevents users from accessing or modifying data that they do not own or have permission to see, protecting user privacy and data integrity.
+
+* **Rate Limiting**
+    * **Implementation:** We will apply rate limiting to the API to restrict the number of requests a single user or IP address can make in a given time frame.
+    * **Purpose:** This is a crucial defense against Denial-of-Service (DoS) attacks and prevents malicious actors from overwhelming the server with requests.
+
+* **Input Validation and Sanitization**
+    * **Implementation:** All data received from the client (e.g., in forms, URL parameters) will be strictly validated and sanitized on the server side.
+    * **Purpose:** This protects our database from injection attacks (like SQL Injection) and Cross-Site Scripting (XSS) by ensuring that only clean, expected data is processed.
+
+### Importance of Security in Key Areas
+
+* **Protecting User Data:** Strong authentication and authorization are essential to protect personally identifiable information (PII) such as names, emails, and user history from unauthorized access.
+* **Securing Payments:** While a third-party service will handle direct payment processing, our API must securely manage payment identifiers and booking confirmations. Securing these transactions is critical to prevent financial fraud and maintain user trust.
+* **Maintaining Platform Integrity:** Security measures prevent unauthorized users from creating fake listings, writing malicious reviews, or altering booking information, which preserves the reliability and trustworthiness of the entire platform.
