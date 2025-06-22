@@ -174,4 +174,23 @@ This section provides an overview of the database structure, outlining the key e
 * A **Property** can have many **Reviews** (one-to-many).
 * A **Booking** belongs to one **User** and one **Property**.
 * A **Review** belongs to one **User** and one **Property**.
-* A **Payment** is associated with one **Booking** (one-to-one).
+* A **Payment** is associated with one **Booking** (one-to-one).---
+
+## Feature Breakdown
+
+This section details the core features that will be implemented in the backend of the AirBnB Clone project.
+
+* **User Management**
+    * This feature will handle all aspects of user authentication and profile management. It will allow users to register for a new account, log in securely, and manage their personal information. This is the foundation of the application, as it enables a personalized and secure experience for every user.
+
+* **Property Management**
+    * This feature allows property owners to create, update, and manage their listings. Owners can upload photos, set pricing, describe their property, and specify available dates. This system is essential for populating the platform with accommodations for guests to browse and book.
+
+* **Search and Filtering**
+    * This feature will provide users with a powerful search functionality to find properties based on location, dates, number of guests, and other criteria like price range or amenities. A robust search and filtering system is critical for a positive user experience, enabling guests to easily find the perfect place to stay.
+
+* **Booking System**
+    * The booking system is the core transactional feature of the application. It will manage the entire booking process, from a user selecting dates and requesting to book, to the owner confirming the reservation and the system blocking out the dates. This ensures a smooth and reliable process for both guests and hosts.
+
+* **Reviews and Ratings**
+    * This feature enables users to leave reviews and ratings for properties after their stay. This builds trust and community on the platform, as future guests can use this feedback to make informed decisions. It also allows hosts to build a reputation for their properties.
