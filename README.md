@@ -62,7 +62,18 @@ A well-designed booking system is critical for success. It reduces friction in t
 * **Secondary Text:**
     * Font Family: Circular
     * Font Weight: Book (400)
-    * Font Size: 14px
+    * Font Size: 14px---
+
+## Project Roles and Responsibilities
+
+* **Project Manager:** Oversees the project timeline, coordinates team efforts, and manages the final deliverables to ensure the project stays on track.
+* **Frontend Developers:** Implement all UI components based on the Figma designs, connect the frontend to the backend APIs, and ensure the application is responsive and user-friendly.
+* **Backend Developers:** Build and maintain the server-side application, design and manage the database schema, and implement the business logic and APIs.
+* **Designers:** Create UI mockups and prototypes in Figma, maintain the project's design system, and ensure the final product meets UX quality standards.
+* **QA/Testers:** Write and execute test cases, perform manual and automated testing, identify and report bugs, and verify that the application meets all requirements.
+* **DevOps Engineers:** Manage the deployment process, set up and maintain the Continuous Integration/Continuous Deployment (CI/CD) pipeline, and oversee the server infrastructure.
+* **Product Owner:** Defines the project requirements, prioritizes features in the product backlog, and acts as the primary representative for stakeholder interests.
+* **Scrum Master:** Facilitates all agile processes and ceremonies, removes any blockers hindering the team's progress, and organizes team meetings to ensure smooth collaboration.
 
 ### Importance of Identifying Design Properties
 Identifying and documenting the specific properties of a mock-up design (like colors, fonts, and spacing) is a critical step before development. It establishes a single source of truth for the application's visual identity, ensuring consistency across all components and pages. This practice streamlines the development process, reduces ambiguity for developers, and makes it easier to maintain and scale the application's frontend in the future.
